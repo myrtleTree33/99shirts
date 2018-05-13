@@ -5,6 +5,7 @@ import {
   Navbar,
   NavbarItem,
   NavbarMenu,
+  NavbarBrand,
   NavbarStart,
   NavbarEnd
 } from "bloomer";
@@ -46,10 +47,15 @@ class NavBar extends Component {
   render() {
     return (
       <Navbar>
+        <NavbarBrand>
+            <NavbarItemCustom to="/">Home</NavbarItemCustom>
+        </NavbarBrand>
         <NavbarMenu>
           <NavbarStart>
-            <NavbarItemCustom to="/">Home</NavbarItemCustom>
-            <NavbarItemCustom to="/about">About</NavbarItemCustom>
+            <NavbarItemCustom to="/new">New</NavbarItemCustom>
+            <NavbarItemCustom to="/misc">Programming</NavbarItemCustom>
+            <NavbarItemCustom to="/misc">Web</NavbarItemCustom>
+            <NavbarItemCustom to="/devops">Devops</NavbarItemCustom>
           </NavbarStart>
           <NavbarEnd>
             <NavbarItemCustom to="/cart">Cart</NavbarItemCustom>
