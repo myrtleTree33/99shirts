@@ -10,8 +10,10 @@ import {
   NavbarEnd
 } from "bloomer";
 
+import "./NavBar.css";
+
 /**
- * This is a custom component, as Bloomer / Bulma does not have a way 
+ * This is a custom component, as Bloomer / Bulma does not have a way
  * to override href to use React Router to avoid reloading entire page.
  */
 class NavbarItemCustom extends Component {
@@ -48,14 +50,13 @@ class NavBar extends Component {
     return (
       <Navbar>
         <NavbarBrand>
-            <NavbarItemCustom to="/">Home</NavbarItemCustom>
+          {/* <NavbarItemCustom to="/" className="siteHero-header">CodeAnthem</NavbarItemCustom> */}
         </NavbarBrand>
         <NavbarMenu>
           <NavbarStart>
-            <NavbarItemCustom to="/new">New</NavbarItemCustom>
-            <NavbarItemCustom to="/misc">Programming</NavbarItemCustom>
-            <NavbarItemCustom to="/misc">Web</NavbarItemCustom>
-            <NavbarItemCustom to="/devops">Devops</NavbarItemCustom>
+            <NavbarItemCustom to="/popular">Popular</NavbarItemCustom>
+            <NavbarItemCustom to="/men">Men</NavbarItemCustom>
+            <NavbarItemCustom to="/women">Women</NavbarItemCustom>
           </NavbarStart>
           <NavbarEnd>
             <NavbarItemCustom to="/cart">Cart</NavbarItemCustom>
