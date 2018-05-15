@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./SiteFooter.css";
-import { Content, Columns, Column, Title, Footer, Container } from "bloomer";
+import { Icon, Content, Columns, Column, Title, Footer, Container } from "bloomer";
 import { Section } from "bloomer/lib/layout/Section";
 import { Level } from "bloomer/lib/components/Level/Level";
 
@@ -26,9 +26,31 @@ class SiteFooter extends Component {
                 <p>Terms and conditions</p>
               </div>
             </Column>
-            <Column isSize="1/4">hello world</Column>
-            <Column isSize="1/4">hello world</Column>
-            <Column isSize="1/4">hello world</Column>
+            <Column isSize="1/4">
+              <div>
+                <Title isSize="6">Company</Title>
+              </div>
+              <div>
+                <p>About us</p>
+                <p>Contribute an idea</p>
+              </div>
+            </Column>
+            <Column isSize="1/4">
+              <div>
+                <Title isSize="6">Social Media</Title>
+              </div>
+              <div>
+                <span><Icon isSize="medium" className="fab fa-instagram" /></span>
+                <span><Icon isSize="medium" className="fab fa-facebook" /></span>
+              </div>
+            </Column>
+            <Column isSize="1/4">
+              <div>
+                <Title isSize="6">Mailing List</Title>
+              </div>
+              <div>
+              </div>
+            </Column>
           </Columns>
         </Container>
         <Section>

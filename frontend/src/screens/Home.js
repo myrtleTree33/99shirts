@@ -10,7 +10,13 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      products: [{}, {}, {}, {}]
+      products: [
+        {}, {}, {}, {},
+        {}, {}, {}, {},
+        {}, {}, {}, {},
+        {}, {}, {}, {},
+        {}, {}, {}, {},
+      ]
     };
   }
 
