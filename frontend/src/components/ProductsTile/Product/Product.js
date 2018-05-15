@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./Product.css";
-import { Title } from "bloomer/lib/elements/Title";
+import { Title, Image } from "bloomer";
 
 class Product extends Component {
   constructor() {
@@ -10,15 +10,16 @@ class Product extends Component {
 
   render() {
     const { product = {} } = this.props;
-    const {title = 'title', price = '$0.00'} = product;
+    const { title = "title", price = "$0.00" } = product;
     return (
       <div>
         <div>
-          <Title isSize="6">{title}</Title>
+          <Image isRatio="1:1" src="https://via.placeholder.com/480x480" />
         </div>
         <div>
-            {price}
+          <Title isSize="6">{title}</Title>
         </div>
+        <div>{price}</div>
       </div>
     );
   }

@@ -6,6 +6,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import SiteHero from "./components/SiteHero/SiteHero";
+import SiteFooter from './components/SiteFooter/SiteFooter';
 import Home from "./screens/Home";
 import Login from "./screens/Login";
 import Protected from "./screens/Protected";
@@ -68,6 +69,7 @@ class App extends Component {
               <PrivateRoute path="/protected" component={Protected} />
             </Switch>
           </Container>
+          <SiteFooter />
         </Container>
       </div>
     );

@@ -1,30 +1,26 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Section } from "bloomer";
 
-import Splash from '../components/Splash/Splash';
-import SearchBar from "../components/SearchBar/SearchBar";
 import ProductsTile from "../components/ProductsTile/ProductsTile";
+import Splash from '../components/Splash/Splash';
+import SearchBar from '../components/SearchBar/SearchBar';
 
 class Home extends Component {
   constructor() {
     super();
     this.state = {
-      products: [
-        {},
-        {},
-        {},
-        {},
-      ]
-    }
+      products: [{}, {}, {}, {}]
+    };
   }
 
   render() {
     return (
-      <div>
+      <Section>
         <Splash />
         <SearchBar />
-        <ProductsTile products = {this.state.products} />
-      </div>
+        <ProductsTile products={this.state.products} />
+      </Section>
     );
   }
 }
