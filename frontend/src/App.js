@@ -61,13 +61,13 @@ class App extends Component {
             <Link to="/protected">Protected</Link>
           </nav> */}
           </header>
-          <Section>
+          <Container>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/login" component={Login} />
               <PrivateRoute path="/protected" component={Protected} />
             </Switch>
-          </Section>
+          </Container>
         </Container>
       </div>
     );

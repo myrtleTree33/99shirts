@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Tabs, TabList, Tab, TabLink, Icon} from 'bloomer';
+import { Tabs, TabList, Tab, TabLink, Icon } from "bloomer";
 
 class SiteHeroTabs extends Component {
   constructor() {

@@ -17,7 +17,7 @@ class SiteHero extends Component {
           <Title className="siteHero-header">CodeAnthem</Title>
           {/* <p>Unleash the inner geek in you.</p> */}
         </HeroBody>
-        <HeroFooter>
+        <HeroFooter className="siteHero-footer">
           <SiteHeroTabs />
         </HeroFooter>
       </Hero>

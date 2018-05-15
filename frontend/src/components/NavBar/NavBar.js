@@ -54,9 +54,9 @@ class NavBar extends Component {
         </NavbarBrand>
         <NavbarMenu>
           <NavbarStart>
-            <NavbarItemCustom to="/popular">Popular</NavbarItemCustom>
+            {/* <NavbarItemCustom to="/popular">Popular</NavbarItemCustom>
             <NavbarItemCustom to="/men">Men</NavbarItemCustom>
-            <NavbarItemCustom to="/women">Women</NavbarItemCustom>
+            <NavbarItemCustom to="/women">Women</NavbarItemCustom> */}
           </NavbarStart>
           <NavbarEnd>
             <NavbarItemCustom to="/cart">Cart</NavbarItemCustom>

@@ -1,4 +1,19 @@
+// $navbar-background-color: #000;
+$navbar-height: 1.9rem;
+
+$control-radius: 0 !default;
+$input-radius: 0;
+$input-shadow: 0 !default;
+
+$section-padding: 1.75rem 0rem;
+// $input-focus-box-shadow-size: none;
+// $input-focus-box-shadow-color: none;
+
 @import 'bulma/bulma';
+
+.input .button { border-radius: 0 !important }
+
+
 
 body {
   margin: 0;
