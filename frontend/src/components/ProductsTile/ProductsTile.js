@@ -17,15 +17,13 @@ class ProductsTile extends Component {
     const { products = [{}, {}] } = this.props;
     return (
       <Section>
-        <Container>
-          <Columns isCentered className="columns-wrap">
-            {products.map(p => (
-              <Column isSize="1/4">
-                <Product product={p} />
-              </Column>
-            ))}
-          </Columns>
-        </Container>
+        <Columns isCentered className="columns-wrap">
+          {products.map(p => (
+            <Column isSize="1/3">
+              <Product product={p} />
+            </Column>
+          ))}
+        </Columns>
       </Section>
     );
   }
