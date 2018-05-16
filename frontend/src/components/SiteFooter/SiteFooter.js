@@ -55,7 +55,7 @@ class SiteFooter extends Component {
         </Container>
         <Section>
             <div>Copyright (c) Code Anthem.</div>
-            <div>Made in Singapore.</div>
+            <div>Designed in Singapore.</div>
         </Section>
       </Footer>
     );
