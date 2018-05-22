@@ -14,7 +14,7 @@ class Product extends Component {
     return (
       <div>
         <div>
-          <Image isRatio="1:1" src="https://via.placeholder.com/480x480" />
+          <Image src="https://via.placeholder.com/280x420" />
         </div>
         <div>
           <Title isSize="6">{title}</Title>

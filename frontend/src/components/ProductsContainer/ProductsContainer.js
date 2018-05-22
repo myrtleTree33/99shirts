@@ -28,22 +28,15 @@ class ProductsContainer extends Component {
           <Title>{title}</Title>
         </Section>
         <Section>
-          <Columns>
+          {/* <Columns>
             <Column isSize="1/4">
               <ProductsMenu />
             </Column>
             <Column isSize="3/4">
               <ProductsTile products={products} />
             </Column>
-          </Columns>
-          {/* <Level>
-          <LevelLeft>
-            <ProductsMenu />
-          </LevelLeft>
-          <LevelRight>
-            <ProductsTile products={products} />
-          </LevelRight>
-        </Level> */}
+          </Columns> */}
+          <ProductsTile products={products} />
         </Section>
       </Container>
     );

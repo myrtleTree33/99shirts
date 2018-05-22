@@ -19,7 +19,7 @@ class ProductsTile extends Component {
       <Section>
         <Columns isCentered className="columns-wrap">
           {products.map(p => (
-            <Column isSize="1/3">
+            <Column isSize="1/4">
               <Product product={p} />
             </Column>
           ))}
