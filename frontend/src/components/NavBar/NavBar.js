@@ -32,7 +32,7 @@ class NavbarItemCustom extends Component {
 
   render() {
     return (
-      <NavbarItem href="/" onClick={this.handleClick}>
+      <NavbarItem  onClick={this.handleClick}>
         <Link to={this.props.to || this.props.toUrl}>
           {this.props.children}
         </Link>
