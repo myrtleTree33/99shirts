@@ -29,7 +29,7 @@ class SiteFooter extends Component {
             </Column>
             <Column isSize="1/4">
               <div>
-                <Title isSize="6">Company</Title>
+                <Title isSize="6"><Link to="/company">Company</Link></Title>
               </div>
               <div>
                 <p>About us</p>
