@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-
-import "./SiteFooter.css";
 import { Icon, Content, Columns, Column, Title, Footer, Container } from "bloomer";
 import { Section } from "bloomer/lib/layout/Section";
 import { Level } from "bloomer/lib/components/Level/Level";
+
+import "./SiteFooter.css";
+import MailingListForm from './MailingListForm/MailingListForm';
 
 class SiteFooter extends Component {
   constructor() {
@@ -50,6 +51,10 @@ class SiteFooter extends Component {
                 <Title isSize="6">Mailing List</Title>
               </div>
               <div>
+                <p>Sign up to get tips on special offers and new releases.</p>
+              </div>
+              <div>
+                <MailingListForm />
               </div>
             </Column>
           </Columns>
