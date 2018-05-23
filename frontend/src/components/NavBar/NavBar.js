@@ -33,7 +33,7 @@ class NavbarItemCustom extends Component {
   render() {
     return (
       <NavbarItem  onClick={this.handleClick}>
-        <Link to={this.props.to || this.props.toUrl}>
+        <Link to={this.props.to || this.props.toUrl} className="top-nav-item">
           {this.props.children}
         </Link>
       </NavbarItem>

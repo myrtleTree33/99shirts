@@ -12,6 +12,7 @@ import Login from "./screens/Login";
 import Protected from "./screens/Protected";
 import userService from "./services/users";
 import Men from "./screens/Men";
+import Help from "./screens/Help";
 
 /**
  * Allows the creation of a protected route, if the user is not signed in.
@@ -68,6 +69,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/login" component={Login} />
               <Route path="/men" component={Men} />
+              <Route path="/help" component={Help} />
               <PrivateRoute path="/protected" component={Protected} />
             </Switch>
           </Container>

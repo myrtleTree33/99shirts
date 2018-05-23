@@ -1,3 +1,11 @@
 .navbar-item {
     font-size: .9rem;
 }
+
+.top-nav-item {
+    color: #fff;
+    font-size: .8rem;
+    &:hover {
+        color: #f00;
+    }
+}

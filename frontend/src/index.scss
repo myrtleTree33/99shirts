@@ -7,6 +7,8 @@ $input-shadow: 0 !default;
 
 $section-padding: 1.75rem 0rem;
 $footer-background-color: none;
+
+$family-primary: 'Open Sans', sans-serif;
 // $input-focus-box-shadow-size: none;
 // $input-focus-box-shadow-color: none;
 
@@ -14,10 +16,12 @@ $footer-background-color: none;
 
 .input .button { border-radius: 0 !important }
 
-
+.title {
+  font-family: 'Raleway';
+  font-weight: 300;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }

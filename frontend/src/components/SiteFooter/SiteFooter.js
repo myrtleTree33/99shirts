@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 import "./SiteFooter.css";
 import { Icon, Content, Columns, Column, Title, Footer, Container } from "bloomer";
@@ -17,7 +18,7 @@ class SiteFooter extends Component {
           <Columns>
             <Column isSize="1/4">
               <div>
-                <Title isSize="6">Help</Title>
+                <Title isSize="6"><Link to="/help">Help</Link></Title>
               </div>
               <div>
                 <p>FAQ</p>
