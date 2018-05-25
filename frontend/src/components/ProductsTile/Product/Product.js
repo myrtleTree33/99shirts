@@ -4,8 +4,15 @@ import "./Product.css";
 import { Title, Image } from "bloomer";
 
 class Product extends Component {
+  
   constructor() {
     super();
+    this.state = {
+      title: 'Product title',
+      description: 'Product description',
+      price: '0.00',
+      currency: 'SGD'
+    };
   }
 
   render() {

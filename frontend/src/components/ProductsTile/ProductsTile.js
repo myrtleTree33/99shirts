@@ -14,7 +14,9 @@ class ProductsTile extends Component {
   }
 
   render() {
-    const { products = [{}, {}] } = this.props;
+    const { products = [{}, {
+      
+    }] } = this.props;
     return (
       <Section>
         <Columns isCentered className="columns-wrap">
