@@ -4,20 +4,22 @@ import "./Product.css";
 import { Title, Image } from "bloomer";
 
 class Product extends Component {
-  
+
   constructor() {
     super();
-    this.state = {
-      title: 'Product title',
-      description: 'Product description',
-      price: '0.00',
-      currency: 'SGD'
-    };
   }
 
   render() {
     const { product = {} } = this.props;
-    const { title = "title", price = "$0.00" } = product;
+    const {
+      id = '0',
+      title = 'Product title',
+      description = 'Product Description',
+      price = '0.00',
+      currency = 'SGD',
+      symbol = '$'
+    } = product;
+    const formattedPrice = symbol + price;
     return (
       <div>
         <div>
@@ -26,7 +28,7 @@ class Product extends Component {
         <div>
           <Title isSize="6">{title}</Title>
         </div>
-        <div>{price}</div>
+        <div>{formattedPrice}</div>
       </div>
     );
   }

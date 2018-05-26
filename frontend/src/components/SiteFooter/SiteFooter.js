@@ -43,8 +43,8 @@ class SiteFooter extends Component {
                 <Title isSize="6">Social Media</Title>
               </div>
               <div>
-                <span><Icon isSize="medium" className="fab fa-instagram" /></span>
-                <span><Icon isSize="medium" className="fab fa-facebook" /></span>
+                <span><a href="/"><Icon isSize="medium" className="fab fa-instagram" /></a></span>
+                <span><a href="/"><Icon isSize="medium" className="fab fa-facebook" /></a></span>
               </div>
             </Column>
             <Column isSize="1/4">
