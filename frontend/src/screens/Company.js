@@ -9,10 +9,10 @@ class Company extends Component {
 
   render() {
     return (<div>
-    <Title isSize={2}>About us</Title>
+    <Title id="about" isSize={2}>About us</Title>
     <Section>
     </Section>
-    <Title isSize={2}>Contribute an idea</Title>
+    <Title id="contribute" isSize={2}>Contribute an idea</Title>
     </div>
       )
   }

@@ -11,20 +11,20 @@ class Help extends Component {
     return (<div>
     <Title isSize={2}>Help</Title>
     <Section>
-      <Title isSize={3}>FAQ</Title>
+      <Title id="faq" isSize={3}>FAQ</Title>
       <p>
       <div><strong>How are designs sourced?</strong></div>
       <div>Designs are sourced from </div>
       </p>
     </Section>
     <Section>
-      <Title isSize={3}>Shipping</Title>
+      <Title id="shipping" isSize={3}>Shipping</Title>
     </Section>
     <Section>
-      <Title isSize={3}>Return policy</Title>
+      <Title id="policy" isSize={3}>Return policy</Title>
     </Section>
     <Section>
-      <Title isSize={3}>Terms and conditions</Title>
+      <Title id="toc" isSize={3}>Terms and conditions</Title>
     </Section>
     </div>
       )

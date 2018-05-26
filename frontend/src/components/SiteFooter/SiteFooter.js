@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Icon, Content, Columns, Column, Title, Footer, Container } from "bloomer";
 import { Section } from "bloomer/lib/layout/Section";
 import { Level } from "bloomer/lib/components/Level/Level";
+import { HashLink } from 'react-router-hash-link';
 
 import "./SiteFooter.css";
 import MailingListForm from './MailingListForm/MailingListForm';
@@ -22,10 +23,10 @@ class SiteFooter extends Component {
                 <Title isSize="6"><Link to="/help">Help</Link></Title>
               </div>
               <div>
-                <p>FAQ</p>
-                <p>Shipping</p>
-                <p>Returns</p>
-                <p>Terms and conditions</p>
+                <p><HashLink to="/help#faq">FAQ</HashLink></p>
+                <p><HashLink to="/help#shipping">Return policy</HashLink></p>
+                <p><HashLink to="/help#policy">Policy</HashLink></p>
+                <p><HashLink to="/help#toc">Terms and conditions</HashLink></p>
               </div>
             </Column>
             <Column isSize="1/4">
@@ -33,8 +34,8 @@ class SiteFooter extends Component {
                 <Title isSize="6"><Link to="/company">Company</Link></Title>
               </div>
               <div>
-                <p>About us</p>
-                <p>Contribute an idea</p>
+                <p><HashLink to="/company#about">About us</HashLink></p>
+                <p><HashLink to="/company#contribute">Contribute an idea</HashLink></p>
               </div>
             </Column>
             <Column isSize="1/4">
@@ -60,8 +61,8 @@ class SiteFooter extends Component {
           </Columns>
         </Container>
         <Section>
-            <div>Copyright (c) Code Anthem.</div>
-            <div>Designed in Singapore.</div>
+          <div>Copyright (c) Code Anthem.</div>
+          <div>Designed in Singapore.</div>
         </Section>
       </Footer>
     );
